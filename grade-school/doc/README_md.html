@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>README - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#label-Grade+School">Grade School</a>
+    <li><a href="#label-For+bonus+points">For bonus points</a>
+    <li><a href="#label-Source">Source</a>
+  </ul>
+</div>
+
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./README_md.html">README</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page README.md">
+
+<h1 id="label-Grade+School">Grade <a href="School.html">School</a><span><a href="#label-Grade+School">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p>Write a small archiving program that stores students&#39; names along with
+the grade that they are in.</p>
+
+<p>In the end, you should be able to:</p>
+<ul><li>
+<p>Add a student&#39;s name to the roster for a grade</p>
+</li><li>
+<p>“Add Jim to grade 2.”</p>
+</li><li>
+<p>“OK.”</p>
+</li><li>
+<p>Get a list of all students enrolled in a grade</p>
+</li><li>
+<p>“Which students are in grade 2?”</p>
+</li><li>
+<p>“We&#39;ve only got Jim just now.”</p>
+</li><li>
+<p>Get a sorted list of all students in all grades. Grades should sort  as 1,
+2, 3, etc., and students within a grade should be sorted  alphabetically by
+name.</p>
+</li><li>
+<p>“Who all is enrolled in school right now?”</p>
+</li><li>
+<p>“Grade 1: Anna, Barb, and Charlie. Grade 2: Alex, Peter, and Zoe. Grade 3…”</p>
+</li></ul>
+
+<p>Note that all our students only have one name. (It&#39;s a small town, what
+do you want?)</p>
+
+<h2 id="label-For+bonus+points">For bonus points<span><a href="#label-For+bonus+points">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Did you get the tests passing and the code clean? If you want to, these are
+some additional things you could try:</p>
+<ul><li>
+<p>If you&#39;re working in a language with mutable data structures and your 
+implementation allows outside code to mutate the school&#39;s internal DB 
+directly, see if you can prevent this. Feel free to introduce additional 
+tests.</p>
+</li></ul>
+
+<p>Then please share your thoughts in a comment on the submission. Did this
+experiment make the code better? Worse? Did you learn anything from it?</p>
+<hr>
+
+<p>For installation and learning resources, refer to the <a
+href="http://exercism.io/languages/ruby">exercism help page</a>.</p>
+
+<p>For running the tests provided, you will need the Minitest gem. Open a
+terminal window and run the following command to install minitest:</p>
+
+<pre class="ruby"><span class="ruby-identifier">gem</span> <span class="ruby-identifier">install</span> <span class="ruby-identifier">minitest</span>
+</pre>
+
+<p>If you would like color output, you can <code>require
+&#39;minitest/pride&#39;</code> in the test file, or note the alternative
+instruction, below, for running the test file.</p>
+
+<p>In order to run the test, you can run the test file from the exercise
+directory. For example, if the test suite is called
+<code>hello_world_test.rb</code>, you can run the following command:</p>
+
+<pre class="ruby"><span class="ruby-identifier">ruby</span> <span class="ruby-identifier">hello_world_test</span>.<span class="ruby-identifier">rb</span>
+</pre>
+
+<p>To include color from the command line:</p>
+
+<pre>ruby -rminitest/pride hello_world_test.rb</pre>
+
+<p>The test files may have the execution bit set so you may also be able to
+run it like this:</p>
+
+<pre>./hello_world_test.rb</pre>
+
+<h2 id="label-Source">Source<span><a href="#label-Source">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>A pairing session with Phil Battos at gSchool <a
+href="http://gschool.it">view source</a></p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

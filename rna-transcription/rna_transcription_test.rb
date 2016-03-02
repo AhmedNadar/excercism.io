@@ -12,37 +12,37 @@ class ComplementTest < Minitest::Test
   end
 
   def test_rna_complement_of_guanine_is_cytosine
-    
+
     assert_equal 'C', Complement.of_dna('G')
   end
 
   def test_rna_complement_of_thymine_is_adenine
-    
+
     assert_equal 'A', Complement.of_dna('T')
   end
 
   def test_rna_complement_of_adenine_is_uracil
-    skip
+
     assert_equal 'U', Complement.of_dna('A')
   end
 
   def test_rna_complement
-    skip
+
     assert_equal 'UGCACCAGAAUU', Complement.of_dna('ACGTGGTCTTAA')
   end
 
   def test_correctly_handles_invalid_input
-    
+
     assert_raises(ArgumentError) { Complement.of_dna('U') }
   end
 
   def test_correctly_handles_completely_invalid_inputs
-    
+
     assert_raises(ArgumentError) { Complement.of_dna('XXX') }
   end
 
   def test_correctly_handles_partially_invalid_inputs
-    
+
     assert_raises(ArgumentError) { Complement.of_dna('ACGTXXXCTTAA') }
   end
 
@@ -55,7 +55,7 @@ class ComplementTest < Minitest::Test
   # If you are curious, read more about constants on RubyDoc:
   # http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/constants.html
   def test_bookkeeping
-    
+
     assert_equal 3, Complement::VERSION
   end
 end
